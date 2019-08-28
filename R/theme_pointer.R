@@ -1,0 +1,47 @@
+# Deze functie gooit al het meeste van de pointer stijl over je plot
+# Voeg deze toe aan het einde van je plot. Je kan dan altijd nog de theme functie
+# gebruiken om arguments te overschrijven.
+
+theme_pointer <- function(){
+  ggplot2::theme_minimal() +
+    ggplot2::theme(plot.title = element_text(face = "bold",
+                                    family = "Tenso Bold",
+                                    size = 24,
+                                    color = pointer_colors$text),
+          plot.subtitle = element_text(face = "bold",
+                                       family = "Zilla Slab",
+                                       size = 20,
+                                       color = pointer_colors$text),
+          plot.caption = element_text(hjust = 0,
+                                      color = "#6c737b",
+                                      size = 18,
+                                      family = "Zilla Slab"),
+          axis.text = element_text(size = 14,
+                                   color = "#1d2939",
+                                   family = "Tenso Regular"),
+          axis.title.y = element_text(color = "#6b38e8",
+                                      family = "Tenso Regular",
+                                      size = 18,
+                                      hjust = 1),
+          axis.title.x = element_text(color = pointer_colors$text,
+                                      family = "Tenso Regular",
+                                      size = 18),
+          axis.text.y = element_text(color = pointer_colors$purple),
+          legend.text = element_text(color = pointer_colors$text,
+                                     family = "Tenso Regular",
+                                     size = 12),
+          legend.direction = "horizontal",
+          legend.position = "top",
+          legend.title = element_text(family = "Tenso Regular",
+                                      size = 14),
+          plot.background = element_rect(fill = pointer_colors$background_grey,
+                                         color = 0),
+          strip.text = element_text(color = pointer_colors$purple,
+                                    size = 12,
+                                    face = "bold"),
+          panel.grid.minor = element_blank(),
+          panel.grid = element_line(color = "#d8cedb",
+                                    size = 0.75),
+          panel.grid.major.y = element_line(color = pointer_colors$dark_grey),
+          panel.border = element_blank())
+}

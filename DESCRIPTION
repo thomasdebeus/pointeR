@@ -1,0 +1,18 @@
+Package: pointeR
+Title: Theme styles for charts and usefull functions
+Version: 0.0.0.9001
+Authors@R: 
+    person(given = "Thomas",
+           family = "de Beus",
+           role = c("aut", "cre"),
+           email = "thomasdebeus@gmail.com",
+           comment = structure("YOUR-ORCID-ID", .Names = "ORCID"))
+Description: This Package is a home for R fanatics in the Pointer KRO-NCRV newsroom. It will be populated with functions that create brandstyling for yout Pointer style charts and other usefull functions.  
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat
+Imports: 
+    ggplot2
+RoxygenNote: 6.1.1.9000
